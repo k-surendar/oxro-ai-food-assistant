@@ -1,0 +1,21 @@
+# OXRO AI Food Assistant API - DEVELOPMENT / TEST dependencies.
+# Includes every production pin, then adds the test toolchain only.
+# Versions are the exact ones verified in the project's .venv
+# (Phase 6 Step 5); nothing is upgraded or downgraded.
+
+-r requirements.txt
+
+# --- Direct development dependencies -----------------------------------
+pytest==9.2.0
+httpx==0.28.1
+
+# --- Transitive: pytest ------------------------------------------------
+colorama==0.4.6
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.7.0
+Pygments==2.21.0
+
+# --- Transitive: httpx (FastAPI TestClient) ----------------------------
+httpcore==1.0.9
+# anyio, certifi, h11, idna are already pinned by requirements.txt.

@@ -1,0 +1,34 @@
+# Secrets and env files - never enter the image.
+.env
+.env.*
+.env.example
+
+# Version control.
+.git/
+
+# Virtual environments, caches and build artifacts.
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local development, documentation and tests.
+tests/
+conftest.py
+README.md
+
+# Docker configuration itself and the dev-only requirements file.
+Dockerfile
+.dockerignore
+requirements-dev.txt
+
+# Local logs.
+*.log
